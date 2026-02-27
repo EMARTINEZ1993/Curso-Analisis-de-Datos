@@ -56,12 +56,12 @@ const getActiveColors = () => {
 
 // �""? NIVELES Y XP (del P2) �""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�"?
 const LEVELS = [
-  { level: 1, name: 'Novato', minXP: 0, icon: '', color: C.teal },
-  { level: 2, name: 'Aprendiz', minXP: 200, icon: '', color: C.blue },
-  { level: 3, name: 'Analista', minXP: 500, icon: '', color: C.purple },
-  { level: 4, name: 'Explorador', minXP: 900, icon: '', color: C.orange },
-  { level: 5, name: 'Científico', minXP: 1400, icon: '', color: C.yellow },
-  { level: 6, name: 'Maestro', minXP: 2000, icon: '', color: C.pink },
+  { level: 1, name: 'Novato', minXP: 0, icon: '🌱', color: C.teal },
+  { level: 2, name: 'Aprendiz', minXP: 200, icon: '📊', color: C.blue },
+  { level: 3, name: 'Analista', minXP: 500, icon: '🔭', color: C.purple },
+  { level: 4, name: 'Explorador', minXP: 900, icon: '🧭', color: C.orange },
+  { level: 5, name: 'Científico', minXP: 1400, icon: '🧪', color: C.yellow },
+  { level: 6, name: 'Maestro', minXP: 2000, icon: '🏆', color: C.pink },
 ];
 
 const getLevelFromXP = (xp) => {
@@ -73,33 +73,33 @@ const getLevelFromXP = (xp) => {
 
 // �""? INSIGNIAS (del P2) �""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?
 const BADGES = [
-  { id: 'first_login', icon: '', name: 'Primer Paso', desc: 'Te registraste', rarity: 'common' },
-  { id: 'first_code', icon: '', name: 'Primer Código', desc: 'Ejecutaste tu primer código', rarity: 'common' },
-  { id: 'first_module', icon: '', name: 'Módulo 1', desc: 'Completaste Fundamentos', rarity: 'common' },
-  { id: 'streak_3', icon: '', name: 'Racha de 3', desc: '3 días seguidos', rarity: 'rare' },
-  { id: 'streak_7', icon: '', name: 'Semana Perfecta', desc: '7 días seguidos', rarity: 'epic' },
-  { id: 'perfect_quiz', icon: '', name: 'Quiz Perfecto', desc: '5/5 en un quiz', rarity: 'rare' },
-  { id: 'first_try', icon: '', name: 'A la Primera', desc: 'Primer intento correcto', rarity: 'rare' },
-  { id: 'mod2_done', icon: '', name: 'EDA Master', desc: 'Completaste EDA', rarity: 'common' },
-  { id: 'mod3_done', icon: '', name: 'ETL Pro', desc: 'Completaste ETL', rarity: 'common' },
-  { id: 'mod4_done', icon: '', name: 'Viz Wizard', desc: 'Completaste Gráficos', rarity: 'common' },
-  { id: 'all_modules', icon: '', name: 'Graduado', desc: 'Completaste todos los módulos', rarity: 'legendary' },
+  { id: 'first_login', icon: '🐣', name: 'Primer Paso', desc: 'Te registraste', rarity: 'common' },
+  { id: 'first_code', icon: '💻', name: 'Primer Código', desc: 'Ejecutaste tu primer código', rarity: 'common' },
+  { id: 'first_module', icon: '📘', name: 'Módulo 1', desc: 'Completaste Fundamentos', rarity: 'common' },
+  { id: 'streak_3', icon: '🔥', name: 'Racha de 3', desc: '3 días seguidos', rarity: 'rare' },
+  { id: 'streak_7', icon: '🔥🔥', name: 'Semana Perfecta', desc: '7 días seguidos', rarity: 'epic' },
+  { id: 'perfect_quiz', icon: '💯', name: 'Quiz Perfecto', desc: '5/5 en un quiz', rarity: 'rare' },
+  { id: 'first_try', icon: '🎯', name: 'A la Primera', desc: 'Primer intento correcto', rarity: 'rare' },
+  { id: 'mod2_done', icon: '📗', name: 'EDA Master', desc: 'Completaste EDA', rarity: 'common' },
+  { id: 'mod3_done', icon: '📙', name: 'ETL Pro', desc: 'Completaste ETL', rarity: 'common' },
+  { id: 'mod4_done', icon: '📕', name: 'Viz Wizard', desc: 'Completaste Gráficos', rarity: 'common' },
+  { id: 'all_modules', icon: '🎓', name: 'Graduado', desc: 'Completaste todos los módulos', rarity: 'legendary' },
   { id: 'xp_100', icon: '⭐', name: 'Primera Estrella', desc: '100 XP', rarity: 'common' },
-  { id: 'xp_500', icon: '', name: 'Supernova', desc: '500 XP', rarity: 'rare' },
-  { id: 'xp_1000', icon: '', name: 'Leyenda', desc: '1000 XP', rarity: 'epic' },
+  { id: 'xp_500', icon: '🌟', name: 'Supernova', desc: '500 XP', rarity: 'rare' },
+  { id: 'xp_1000', icon: '🏅', name: 'Leyenda', desc: '1000 XP', rarity: 'epic' },
 ];
 
 const RARITY_COLORS = { common: '#94a3b8', rare: '#3b82f6', epic: '#8b5cf6', legendary: '#f59e0b' };
 
 // �""? TIENDA (del P2) �""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�"?
 const SHOP_ITEMS = [
-  { id: 'avatar_rocket', type: 'avatar', icon: '', name: 'Cohete', cost: 50, desc: 'Avatar espacial' },
-  { id: 'avatar_dragon', type: 'avatar', icon: '', name: 'Dragón', cost: 80, desc: 'Avatar épico' },
-  { id: 'avatar_robot', type: 'avatar', icon: '', name: 'Robot', cost: 60, desc: 'Avatar tecno' },
-  { id: 'theme_matrix', type: 'theme', icon: '', name: 'Matrix', cost: 150, desc: 'Tema verde' },
-  { id: 'theme_sunset', type: 'theme', icon: '', name: 'Sunset', cost: 150, desc: 'Tema cálido' },
-  { id: 'hint_pack', type: 'powerup', icon: '', name: 'Pack de Pistas', cost: 30, desc: '3 pistas extra' },
-  { id: 'xp_boost', type: 'powerup', icon: '', name: 'XP x2', cost: 80, desc: 'Doble XP por 1 módulo' },
+  { id: 'avatar_rocket', type: 'avatar', icon: '🚀', name: 'Cohete', cost: 50, desc: 'Avatar espacial' },
+  { id: 'avatar_dragon', type: 'avatar', icon: '🐉', name: 'Dragón', cost: 80, desc: 'Avatar épico' },
+  { id: 'avatar_robot', type: 'avatar', icon: '🤖', name: 'Robot', cost: 60, desc: 'Avatar tecno' },
+  { id: 'theme_matrix', type: 'theme', icon: '🟩', name: 'Matrix', cost: 150, desc: 'Tema verde' },
+  { id: 'theme_sunset', type: 'theme', icon: '🌅', name: 'Sunset', cost: 150, desc: 'Tema cálido' },
+  { id: 'hint_pack', type: 'powerup', icon: '💡', name: 'Pack de Pistas', cost: 30, desc: '3 pistas extra' },
+  { id: 'xp_boost', type: 'powerup', icon: '⚡', name: 'XP x2', cost: 80, desc: 'Doble XP por 1 módulo' },
 ];
 
 // �""? CONFETTI (del P2) �""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�""?�"?
@@ -2241,7 +2241,6 @@ export default function App() {
     </div>
   );
 }
-
 
 
 
